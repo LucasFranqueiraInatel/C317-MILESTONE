@@ -22,7 +22,8 @@ export default {
       },
       colors: {
         'lightGreen': '#99FFAF',
-        'lightBlack': '#090909'
+        'lightBlack': '#090909',
+        'grayStroke': '#202020'
       }
     },
   },
