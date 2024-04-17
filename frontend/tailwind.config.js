@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        Inter: ['Inter', 'sans-serif'],
       },
       fontWeight: {
         thin: '100',

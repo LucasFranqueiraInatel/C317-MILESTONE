@@ -1,27 +1,30 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './components/Navbar'
-import Sidebar from './components/Sidebar'
-import Chatbox from './components/Chatbox'
-
+import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import Chat_page from './pages/Chat_page';
+import Home from './pages/Home';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <div className='flex'>
-        <div className='flex-1'>
-          <Sidebar />
+      <Router>
+        <Navbar />
+        <div className='flex'>  
+          <div className='w-80'>
+            <Sidebar />
+          </div>
+          <div className='w-screen flex justify-center items-center'>
+            <Routes>
+              <Route path='/' element={<Home/>} />
+              <Route path='/chat' element={<Chat_page/>} />
+            </Routes>
+          </div>
         </div>
-        <div className='flex-2 bg-gray-500 w-4/5 mx-10'>
-          <Chatbox />
-        </div>
-
-      </div>
-
-
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
