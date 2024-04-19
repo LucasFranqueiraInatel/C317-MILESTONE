@@ -24,7 +24,11 @@ export default {
       colors: {
         'lightGreen': '#99FFAF',
         'lightBlack': '#090909',
-        'grayStroke': '#202020'
+        'grayStroke': '#202020',
+        'input': '#D8DADC',
+        'inputStroke': '#D8DADC',
+        'textLightBlack':'#222222',
+        'gold':'#DCC07C'
       }
     },
   },

@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Chat_page from './pages/Chat_page';
 import Home from './pages/Home';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <div className='w-screen flex justify-center items-center'>
             <Routes>
               <Route path='/' element={<Home/>} />
+              <Route path='/login' element={<Login/>} />
               <Route path='/chat' element={<Chat_page/>} />
             </Routes>
           </div>
