@@ -8,6 +8,7 @@ const Login = () => {
     const navigateTo = (path) => {
         navigate(path);
     };
+
     return (
         <div className="flex justify-center items-center min-h-screen">
             <div className="flex flex-col items-center p-8 rounded-lg">
@@ -30,13 +31,13 @@ const Login = () => {
                     Forgot password?
                 </a>
 
-                <button className="bg-gold px-4 py-2 rounded-md mb-4 w-80">
+                <button onClick={() => navigateTo('/chat')} className="bg-gold text-textLightBlack font-Inter font-semibold px-4 py-2 rounded-md mb-4 w-80">
                     Log in
                 </button>
 
                 <p className="text-gray-400 text-sm">
                     Don’t have an account?{' '}
-                    <a href="#" className="text-gold">
+                    <a onClick={() => navigateTo('/signup')} className="text-gold cursor-pointer">
                         Create one
                     </a>
                 </p>
