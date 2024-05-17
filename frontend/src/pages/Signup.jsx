@@ -18,12 +18,12 @@ export const Signup = () => {
                 </p>
                 <form className="">
                     
-                    <input type="text" placeholder="Email Address" className="mb-3 w-80 p-2 bg-input bg-opacity-10 border border-inputStroke text-white text-opacity-50 placeholder-gray-400 rounded-md" />
                     <input type="text" placeholder="Name" className="mb-3 w-80 p-2 bg-input bg-opacity-10 border border-inputStroke text-white text-opacity-50 placeholder-gray-400 rounded-md" />
                     <input type="text" placeholder="Phone" className="mb-3 w-80 p-2 bg-input bg-opacity-10 border border-inputStroke text-white text-opacity-50 placeholder-gray-400 rounded-md" />
+                    <input type="text" placeholder="Email Address" className="mb-3 w-80 p-2 bg-input bg-opacity-10 border border-inputStroke text-white text-opacity-50 placeholder-gray-400 rounded-md" />
+                    <input type="confirm email" placeholder="Confirm Email" className="mb-3 w-80 p-2 bg-input bg-opacity-10 border border-inputStroke text-white text-opacity-50 placeholder-gray-400 rounded-md" />
                     <input type="password" placeholder="Password" className="mb-3 w-80 p-2 bg-input bg-opacity-10 border border-inputStroke text-white text-opacity-50 placeholder-gray-400 rounded-md" />
                     <input type="confirm passowrd" placeholder="Confirm Password" className="mb-3 w-80 p-2 bg-input bg-opacity-10 border border-inputStroke text-white text-opacity-50 placeholder-gray-400 rounded-md" />
-                    <input type="password" placeholder="Password" className="mb-8 w-80 p-2 bg-input bg-opacity-10 border border-inputStroke text-white text-opacity-50 placeholder-gray-400 rounded-md" />
 
                     <button type="" className="w-80 bg-gold p-3 rounded-md text-textLightBlack font-bold">Create and Login</button>
                 </form>

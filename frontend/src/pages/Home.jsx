@@ -15,7 +15,7 @@ const Home = () => {
                 <h1 className='font-poppins font-bold text-white mb-2'>Hi, Welcome! 👋</h1>
 
                 <div className="my-2 w-full text-center">
-                    <button className="bg-gold text-white bg-opacity-20 w-56 px-4 py-2 rounded-lg font-Inter font-semibold">Create New Account</button> 
+                    <button onClick={() => navigateTo('/signup')} className="bg-gold text-white bg-opacity-20 w-56 px-4 py-2 rounded-lg font-Inter font-semibold">Create New Account</button> 
                 </div>
 
                 <div className="w-full text-center">
