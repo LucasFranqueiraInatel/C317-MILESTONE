@@ -1,26 +1,38 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
 
 const Chat_page = () => {
-    const navigate = useNavigate();
+  const [mensage, setMensage] = useState('');
+  
+  const handleChange = (e) => {
+    setMensage(e.target.value);
+  };
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setMensage('');
+  };
 
-    const navigateTo = (path) => {
-        navigate(path);
-    };
-
-    return (
-        <div className="min-h-screen flex items-center justify-center p-4">
-            <div className="max-w-md  p-6 rounded-lg">
-                <h2 className="text-white font-poppins font-bold text-2xl font-bold mb-4">Create account</h2>
-                <p className="text-white font-Inter font-regular mb-6">
-                     Write a message.
-                </p>
-                <form className="">
-                    <input type="text" placeholder="Mensage" className="mb-3 w-80 p-2 bg-input bg-opacity-10 border border-inputStroke text-white text-opacity-50 placeholder-gray-400 rounded-md" />
-                </form>
-            </div>
-         </div>
-    );
-}
+  return (
+    <div className="flex justify-center items-center">
+      <div className="flex flex-col items-center">
+        <div className="my-2 w-full text-center">
+          <input 
+            type="text" 
+            value={mensage} 
+            onChange={handleChange} 
+            className="border border-gray-300 rounded-lg px-4 py-2 w-96" 
+            placeholder="Write a Mensage..." 
+          />
+          <button 
+            onClick={handleSubmit} 
+            className="bg-gold text-white bg-opacity-20 w-14 px-2 py-2 rounded-lg font-Inter font-semibold mt-2"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Chat_page;
