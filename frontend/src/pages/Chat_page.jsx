@@ -25,7 +25,8 @@ const Chat_page = () => {
           />
           <button 
             onClick={handleSubmit} 
-            className="bg-gold text-white bg-opacity-20 w-14 px-2 py-2 rounded-lg font-Inter font-semibold mt-2"
+            className={`bg-gold text-white bg-opacity-20 w-14 px-2 py-2 rounded-lg font-Inter font-semibold mt-2 ${!mensage ? 'opacity-50 cursor-not-allowed' : ''}`} // Ajusta a opacidade e o cursor quando desabilitado
+            disabled={!mensage} 
           >
             Send
           </button>
